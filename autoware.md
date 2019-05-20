@@ -50,3 +50,10 @@ $ rosdep update
 $ rosdep install -y --from-paths src --ignore-src --rosdistro kinetic
 $ ./catkin_make_release
 ```
+
+error
+
+1.libcuda.so file not recognized: File truncated
+```
+ln -s /usr/local/cuda/lib64/stubs/libcuda.so /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libcuda.so
+```
