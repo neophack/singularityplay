@@ -57,3 +57,10 @@ $ ./catkin_make_release
 ```
 ln -s /usr/local/cuda/lib64/stubs/libcuda.so /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libcuda.so
 ```
+2.(gksudo:6244): Gtk-WARNING **: cannot open display: :0
+
+open another terminal
+```
+$ xhost +
+access control disabled, clients can connect from any host
+```
