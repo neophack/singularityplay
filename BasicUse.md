@@ -7,3 +7,8 @@ $ sudo singularity build -w test.img docker://ubuntu
 ```
 $ singularity exec test.img cat /etc/issue
 ```
+### Create New Sandbox
+```
+sudo singularity build --sandbox ubuntu/ docker://ubuntu
+sudo singularity build ubuntu.simg ubuntu/
+```
