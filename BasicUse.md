@@ -28,3 +28,12 @@ $ singularity exec test.img cat /etc/issue
 sudo singularity build --sandbox ubuntu/ docker://ubuntu
 sudo singularity build ubuntu.simg ubuntu/
 ```
+## docker2singularity
+ubuntu:14.04是对应的镜像，/tmp/test是生成镜像的路径
+```
+docker run -v /var/run/docker.sock:/var/run/docker.sock \
+-v /tmp/test:/output \
+--privileged -t --rm \
+singularityware/docker2singularity:v2.6 \
+ubuntu:14.04
+```
